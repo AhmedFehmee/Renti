@@ -1,0 +1,553 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".Activity.intro.RegisterActivity.RegisterActivity">
+
+    <LinearLayout
+        android:id="@+id/container_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/login_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@android:color/white"
+            android:gravity="center_horizontal"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="30dp">
+
+                <ImageView
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/tagere_logo_name" />
+            </LinearLayout>
+        </android.support.v7.widget.Toolbar>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:text="@string/create_a_free_account"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:gravity="center"
+                    android:text="@string/now_you_can_create_a_free_account_on_rentei_and_enjoy_it_s_awesome_features"
+                    android:textSize="15dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/car_choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="5dp"
+                        app:cardCornerRadius="5sp"
+                        app:cardElevation="10sp"
+                        android:onClick="onViewClicked">
+
+                        <FrameLayout
+                            android:id="@+id/car_ok"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:onClick="onViewClicked"
+                            android:layout_gravity="right">
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:src="@drawable/user_choice" />
+                        </FrameLayout>
+
+                        <LinearLayout
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:padding="10dp"
+                                android:src="@drawable/car_pic" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/cardview_dark_background" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="10dp"
+                                android:text="@string/tageree_office" />
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/user_choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="5dp"
+                        app:cardCornerRadius="5sp"
+                        app:cardElevation="10sp"
+                        android:onClick="onViewClicked">
+
+                        <FrameLayout
+                            android:id="@+id/user_ok"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="right"
+                            android:onClick="onViewClicked">
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:src="@drawable/user_choice" />
+                        </FrameLayout>
+
+                        <LinearLayout
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:padding="10dp"
+                                android:src="@drawable/user_pic" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/cardview_dark_background" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="10dp"
+                                android:text="@string/user" />
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_user_sign_up"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="visible"
+                    android:layout_marginTop="10dp">
+
+                    <EditText
+                        android:id="@+id/et_user_name"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/edit_text_background"
+                        android:hint="@string/user_name"
+                        android:inputType="textPersonName"
+                        android:padding="10dp"
+                        android:textSize="15sp"/>
+
+                    <EditText
+                        android:id="@+id/et_email"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/edit_text_background"
+                        android:hint="@string/email_address"
+                        android:inputType="textEmailAddress"
+                        android:padding="10dp"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/et_password"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/edit_text_background"
+                        android:hint="@string/password"
+                        android:inputType="textPassword"
+                        android:padding="10dp"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/et_phone"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/edit_text_background"
+                        android:hint="@string/phone_number"
+                        android:inputType="phone"
+                        android:padding="10dp"
+                        android:textSize="15sp" />
+
+                    <LinearLayout
+                        android:id="@+id/city_view"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"
+                        android:padding="10dp"
+                        android:background="@color/white">
+
+                        <TextView
+                            android:id="@+id/et_cities"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@drawable/edit_text_background"
+                            android:hint="@string/city"
+                            android:inputType="phone"
+                            android:textSize="15sp"
+                            android:onClick="onViewClicked"/>
+                        <Spinner
+                            android:id="@+id/spinner"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <EditText
+                            android:id="@+id/et_id_pic"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.8"
+                            android:background="@drawable/edit_text_background"
+                            android:hint="@string/id_photo"
+                            android:padding="10dp"
+                            android:textSize="15sp" />
+
+                        <ImageView
+                            android:id="@+id/add_id_photo"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.2"
+                            android:src="@drawable/add_pic" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/iv_id_pic"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        android:visibility="gone" />
+                    <LinearLayout
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <EditText
+                            android:id="@+id/et_drive_pic"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.8"
+                            android:background="@drawable/edit_text_background"
+                            android:hint="@string/drive_photo"
+                            android:padding="10dp"
+                            android:textSize="15sp" />
+
+                        <ImageView
+                            android:id="@+id/add_drive_photo"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.2"
+                            android:src="@drawable/add_pic" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/iv_driver_pic"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:id="@+id/btn_sign_up"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/register_button"
+                        android:gravity="center"
+                        android:text="@string/sign_up_btn" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_office_sign_up"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <EditText
+                        android:id="@+id/et_office_name"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/edit_text_background"
+                        android:hint="@string/office_name"
+                        android:inputType="textPersonName"
+                        android:padding="10dp"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/et_office_email"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/edit_text_background"
+                        android:hint="@string/email_address"
+                        android:inputType="textEmailAddress"
+                        android:padding="10dp"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/et_office_password"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/edit_text_background"
+                        android:hint="@string/password"
+                        android:inputType="textPassword"
+                        android:padding="10dp"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/et_office_phone"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/edit_text_background"
+                        android:hint="@string/phone_number"
+                        android:inputType="phone"
+                        android:padding="10dp"
+                        android:textSize="15sp" />
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+                        <Button
+                            android:id="@+id/btn_get_location"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:gravity="center"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_gravity="center|right"
+                            android:background="@drawable/location_icon"/>
+                        <EditText
+                            android:id="@+id/et_office_address"
+                            android:layout_width="300dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/edit_text_background"
+                            android:hint="@string/office_address"
+                            android:padding="10dp"
+                            android:textSize="15sp" />
+
+                    </FrameLayout>
+
+                    <EditText
+                        android:id="@+id/et_office_time_start"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/edit_text_background"
+                        android:hint="@string/work_time_start"
+                        android:padding="10dp"
+                        android:textSize="15sp" />
+                    <EditText
+                        android:id="@+id/et_office_time_end"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/edit_text_background"
+                        android:hint="@string/work_time_end"
+                        android:padding="10dp"
+                        android:textSize="15sp" />
+                    <Button
+                        android:id="@+id/btn_office_sign_up"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/register_button"
+                        android:gravity="center"
+                        android:text="@string/sign_up" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:src="@drawable/car_bg" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <FrameLayout
+        android:id="@+id/pics_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/white"
+            app:cardCornerRadius="5sp"
+            app:cardElevation="10sp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/gallery"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="20dp"
+                    android:background="@drawable/gallery" />
+
+                <ImageButton
+                    android:id="@+id/camera"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="20dp"
+                    android:background="@drawable/photo_camera" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/progress_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray"
+        android:visibility="gone">
+
+        <com.wang.avi.AVLoadingIndicatorView
+            android:id="@+id/avi_progress"
+            style="@style/AVLoadingIndicatorView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:indicatorColor="@color/mainColor"
+            app:indicatorName="BallPulseIndicator" />
+    </FrameLayout>
+    <LinearLayout
+        android:id="@+id/cities_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:visibility="visible"
+        android:padding="10dp"
+        android:layout_marginTop="?actionBarSize"
+        app:layout_behavior="android.support.design.widget.BottomSheetBehavior">
+        <android.support.v7.widget.RecyclerView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/cities_recycle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dp"
+            android:clipToPadding="false"
+            android:padding="5dp" />
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

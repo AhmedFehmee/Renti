@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="mainColor">#1FD3C8</color>
+    <color name="colorPrimary">#93EB93</color>
+    <color name="colorPrimaryDark">#49d643</color>
+    <color name="colorAccent">#1EB0A7</color>
+
+    <color name="colorIntro">#F9FFFE</color>
+
+    <!-- dots inactive colors -->
+    <color name="dot_dark_screen1">#d7fcf6</color>
+
+    <!-- dots active colors -->
+    <color name="dot_light_screen1">#1FD3C8</color>
+
+    <array name="array_dot_active">
+        <item>@color/dot_light_screen1</item>
+    </array>
+
+    <array name="array_dot_inactive">
+        <item>@color/dot_dark_screen1</item>
+    </array>
+    <color name="colorPrimaryText">#000000</color>
+    <color name="colorSecondaryText">#737373</color>
+    <color name="colorIcons">#FFFFFF</color>
+    <color name="colorDivider">#737373</color>
+    <color name="colorMap">#FAE6D6</color>
+    <color name="white">#FFFFFF</color>
+    <color name="red">#FF2121</color>
+    <color name="green">#52e100</color>
+    <color name="gray">#79d9d9d9</color>
+
+    <color name="view_background">#e8ecfa</color>
+    <color name="btn_bg">#277bec</color>
+    <color name="txt_font">#4e5572</color>
+    <color name="action_bar">#1f2649</color>
+    <color name="lower_tab_Indicator">#6ad465</color>
+    <color name="rateColor">#ffd600</color>
+
+    <color name="blue_grey_500">#607D8B</color>
+    <color name="blue_grey_600">#546E7A</color>
+    <color name="blue_grey_700">#455A64</color>
+    <color name="blue_grey_800">#37474F</color>
+    <color name="blue_grey_900">#263238</color>
+
+    <color name="starColor">#45b9ad</color>
+    <color name="noteDescriptionTextColor">#45b9ad</color>
+    <color name="titleTextColor">#FFFFFF</color>
+    <color name="descriptionTextColor">#A6FFFFFF</color>
+    <color name="commentTextColor">#FFFFFF</color>
+    <color name="hintTextColor">#55000000</color>
+    <color name="contentTextColor">#55000000</color>
+</resources>

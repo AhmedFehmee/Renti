@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="extra4it.fahmy.com.rentei.Activity.intro.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/logo" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:paddingEnd="50dp"
+                android:paddingStart="50dp"
+                android:text="@string/tageree_hint"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_skip_register"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/register_button"
+                android:onClick="onViewClicked"
+                android:text="@string/skip_register" />
+
+            <Button
+                android:id="@+id/btn_register"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/register_button"
+                android:onClick="onViewClicked"
+                android:text="@string/create_a_free_account" />
+
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/login_button"
+                android:onClick="onViewClicked"
+                android:text="@string/sign_in" />
+
+            <TextView
+                android:id="@+id/tv_forget"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onViewClicked"
+                android:text="@string/forget_your_password" />
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

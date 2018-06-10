@@ -1,0 +1,151 @@
+<resources>
+    <string name="app_name">Tagere</string>
+
+    <string name="facebook_app_id">1652846931445568</string>
+    <string name="fb_login_protocol_scheme">fb1652846931445568</string>
+    <string name="server_client_id">616108002811-rdijvsj3fjpqninc0h3lffka6iq8vksq.apps.googleusercontent.com</string>
+
+    <string name="default_notification_channel_name" translatable="true">News</string>
+    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+
+    <string name="sign_out">Sign Out</string>
+    <string name="disconnect">Disconnect</string>
+
+    <string name="invalid_login">invalid email address or password</string>
+    <string name="required_mail">E-mail is required</string>
+    <string name="required_user_name">User Name is required</string>
+    <string name="invalid_email">Invalid_email</string>
+    <string name="required_pass">Password is required</string>
+    <string name="required_phone">Phone is required</string>
+    <string name="required_location">Location is required</string>
+    <string name="required_photo">Photo is required</string>
+
+    <string name="get_code">Get Code</string>
+    <string name="confirm">Confirm</string>
+    <string name="code">Code</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="google_maps_api_key">AIzaSyAeQWscmoip7JB9cug13MOvD88ez-MWins</string>
+    <string name="error">Error</string>
+    <string name="no_data">There is no Data</string>
+    <string name="no_internet">Poor Internet Connection</string>
+    <string name="login_need_params">Complete all fields</string>
+    <string name="login_fail">auth failure</string>
+    <string name="register_fail">User Name and E-mail should be unique</string>
+    <string name="register_agree">I agree on</string>
+    <string name="forget_password_mail">Check you E-mail</string>
+
+    <string name="no_notification">No messages yet</string>
+    <string name="enable_gps">please Enable Location</string>
+    <string name="set_location">Set Location</string>
+
+    <string name="shared_language">change</string>
+    <string name="enable_gps_alert">GPS is disabled in your device. Would you like to enable it?</string>
+    <string name="enable_gps_true">Goto Settings Page To Enable GPS</string>
+    <string name="enable_gps_false">Cancel</string>
+    <string name="invalid_pass">weak Password</string>
+    <string name="your_mail">Your mail</string>
+    <string name="new_password">New Password</string>
+    <string name="change">Change</string>
+    <string name="invalid_code">Invalid Code</string>
+    <string name="update_done">Update ok</string>
+    <string name="required_time">Required Time</string>
+    <string name="enable_your_gps">Enable your gps</string>
+    <string name="your_location_is">Your Location is:</string>
+    <string name="search_cars_near_you">Search cars near you</string>
+    <string name="enaple_gps">Please enable your Gps to show nearest cars to you</string>
+    <string name="location_set">Set Location</string>
+    <string name="pick_up">Pick-up</string>
+    <string name="drop_off">Drop_off</string>
+    <string name="change_reservation">Change Reservation</string>
+    <string name="proceed">Proceed</string>
+    <string name="send_the_car_to_home">Send the Car to Home?</string>
+    <string name="send_car_with_driver">Send Car with driver</string>
+    <string name="from_office">From office</string>
+    <string name="thanks_message">Thank you for using Tagere. your order had been placed and the company will confirm it soon</string>
+    <string name="back_to_home">Back to home</string>
+    <string name="pending_orders">Pending Orders</string>
+    <string name="search">Search</string>
+    <string name="pending_new_orders">Pending new orders</string>
+    <string name="active_orders">Active Orders</string>
+    <string name="no_pending_order">There\'s no Pending Orders yet</string>
+    <string name="no_active_order">There\'s no active orders yet</string>
+    <string name="no_notification_yet">There\'s no notification yet</string>
+    <string name="required_profile_pic">Profile picture is Required</string>
+    <string name="select_place_to_pick_up">Select place to pick-up</string>
+    <string name="accept_order">Accept Order</string>
+    <string name="from_home">From home</string>
+    <string name="with_driver">With Driver</string>
+    <string name="tageree_hint">Tageree an exotic car with   a button click</string>
+    <string name="log_in">LOG IN</string>
+    <string name="welcome_nice_to_see_you_again">Welcome!,nice to see you again</string>
+    <string name="tageree_office">Tageree Office</string>
+    <string name="user">User</string>
+    <string name="email_address">Email address</string>
+    <string name="password">Password</string>
+    <string name="login_btn">Login</string>
+    <string name="create_a_free_account">Create A Free Account</string>
+    <string name="now_you_can_create_a_free_account_on_rentei_and_enjoy_it_s_awesome_features">Now,you can create a free account on rentei and enjoy it\'s awesome features</string>
+    <string name="phone_number">Phone number</string>
+    <string name="user_name">User Name</string>
+    <string name="city">City</string>
+    <string name="id_photo">Id Photo</string>
+    <string name="drive_photo">Drive Photo</string>
+    <string name="sign_up_btn">SIGN Up</string>
+    <string name="office_name">Office Name</string>
+    <string name="office_address">Office Address</string>
+    <string name="work_time_start">Work time start</string>
+    <string name="work_time_end">Work time end</string>
+    <string name="sign_up">SIGN Up</string>
+    <string name="cars_near_you">Cars near you</string>
+    <string name="top_companies_near_to_you">Top companies near to you</string>
+    <string name="notifications">Notifications</string>
+    <string name="per_day">Per Day</string>
+    <string name="from">From:</string>
+    <string name="rent_details">Rent details</string>
+    <string name="pick_up_date">Pick up Date</string>
+    <string name="drop_off_date">Drop off Date</string>
+    <string name="select_place_to_drop_off">Select place to drop-off</string>
+    <string name="company_cars">Company Cars</string>
+    <string name="proceed_to_checkout">Proceed to checkout</string>
+    <string name="cars_details">Cars details</string>
+    <string name="distance_included_in_price">Distance included in price</string>
+    <string name="home_price">Home price</string>
+    <string name="driver_price">Driver price</string>
+    <string name="description">Description</string>
+    <string name="features">Features</string>
+    <string name="_4_persons">4 Persons</string>
+    <string name="total_price">Total price</string>
+    <string name="add_a_new_car">Add a new car</string>
+    <string name="car_name">Car Name</string>
+    <string name="car_brand">Car Brand</string>
+    <string name="car_model">Car Model</string>
+    <string name="price_per_day">price per day</string>
+    <string name="price_of_extra_miles">price of extra miles</string>
+    <string name="add_3_image_of_car">Add 3 Image of car</string>
+    <string name="describe_the_car_and_your_offer">Describe the car and your offer</string>
+    <string name="add_car_btn">Add Car</string>
+    <string name="update">Update</string>
+    <string name="logout">Logout</string>
+    <string name="phone">Phone</string>
+    <string name="name">name</string>
+    <string name="skip_register">Skip Register</string>
+    <string name="sign_in">Sign In</string>
+    <string name="forget_your_password">Forget your password ?</string>
+    <string name="no_cars">There\'s no cars for this Company</string>
+    <string name="register_text">You should create account first</string>
+    <string name="all_fields_required">all fields is required with three image of car</string>
+    <string name="add_rate">Add Rate</string>
+
+    <string name="submit">Submit</string>
+    <string name="cancel">Cancel</string>
+    <string name="very_bad">Very Bad</string>
+    <string name="not_good">Not good</string>
+    <string name="ouite_ok">Quite ok</string>
+    <string name="very_good">Very Good</string>
+    <string name="excellent">Excellent !!!</string>
+    <string name="rate_trailer">Rate this Trailer</string>
+    <string name="rate_description">Please select some stars and give your feedback</string>
+    <string name="comment_hint">Please write your comment here ...</string>
+</resources>

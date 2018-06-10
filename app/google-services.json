@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "264625804305",
+    "firebase_url": "https://tajeree-9631d.firebaseio.com",
+    "project_id": "tajeree-9631d",
+    "storage_bucket": "tajeree-9631d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:264625804305:android:1b70fc147c5b55bc",
+        "android_client_info": {
+          "package_name": "extra4it.fahmy.com.rentei"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "264625804305-931l5l9c3ocf8fem5c8lponej2icrq17.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "264625804305-931l5l9c3ocf8fem5c8lponej2icrq17.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDqT8Yngi1RmxHOiWW1sWG-Qdihb6Q-oSI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
